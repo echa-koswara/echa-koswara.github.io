@@ -176,8 +176,6 @@ img {
     grid-template-columns: 1fr 300px;
     gap: 80px;
     align-items: center;
-
-    width: 100%;
 }
 
 .eyebrow {
