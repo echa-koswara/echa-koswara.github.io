@@ -1050,3 +1050,201 @@ footer p {
         font-size: 21px;
     }
 }
+
+/* =========================================
+   COGNITIVE ANTHOLOGY — ARTICLE
+   ========================================= */
+
+.thought-article {
+    padding: 160px 0 120px;
+}
+
+.thought-article-header {
+    max-width: 1000px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid var(--line);
+}
+
+.thought-article-label {
+    display: block;
+    margin-bottom: 35px;
+
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    color: var(--muted);
+}
+
+.thought-article-header h1 {
+    max-width: 950px;
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(52px, 7vw, 100px);
+    line-height: 0.98;
+
+    letter-spacing: -0.055em;
+    font-weight: 500;
+}
+
+.thought-article-header h1 em {
+    font-weight: 400;
+}
+
+.thought-article-meta {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
+
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: var(--muted);
+}
+
+
+/* Article Body */
+
+.thought-article-body {
+    max-width: 720px;
+    margin: 100px auto 0;
+}
+
+.thought-article-body p {
+    margin: 0 0 30px;
+
+    font-size: 18px;
+    line-height: 1.85;
+}
+
+.thought-article-body .lead {
+    margin-bottom: 60px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 27px;
+    line-height: 1.55;
+}
+
+.thought-article-body h2 {
+    margin: 90px 0 30px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    line-height: 1.15;
+
+    font-weight: 500;
+    letter-spacing: -0.03em;
+}
+
+
+/* Quotes */
+
+.thought-article-body blockquote {
+    margin: 70px 0;
+    padding: 35px 0 35px 35px;
+
+    border-left: 1px solid var(--dark);
+
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    line-height: 1.45;
+
+    font-style: italic;
+}
+
+.thought-article-body blockquote span {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    color: var(--muted);
+}
+
+
+/* Footer Article */
+
+.thought-article-footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 100px;
+    padding-top: 30px;
+
+    border-top: 1px solid var(--line);
+
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: var(--muted);
+}
+
+
+/* Back */
+
+.back-to-anthology {
+    display: block;
+
+    max-width: 720px;
+    margin: 80px auto 0;
+
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.back-to-anthology:hover {
+    opacity: 0.55;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .thought-article {
+        padding-top: 130px;
+    }
+
+    .thought-article-header h1 {
+        font-size: clamp(48px, 14vw, 75px);
+    }
+
+    .thought-article-meta {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .thought-article-body {
+        margin-top: 70px;
+    }
+
+    .thought-article-body p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .thought-article-body .lead {
+        font-size: 23px;
+    }
+
+    .thought-article-body h2 {
+        margin-top: 70px;
+        font-size: 32px;
+    }
+
+    .thought-article-body blockquote {
+        margin: 55px 0;
+        font-size: 25px;
+    }
+
+    .thought-article-footer {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
